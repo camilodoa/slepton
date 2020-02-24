@@ -18,7 +18,7 @@ for macOS:
 
 go download [homebrew](https://brew.sh/)
 
-then, install [node](https://nodejs.org/en/) by running `npm install node` in your terminal
+then, install [node](https://nodejs.org/en/) by running `brew install node` in your terminal
 
 then, navigate to this directory in your terminal
 
