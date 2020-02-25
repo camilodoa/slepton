@@ -9,11 +9,13 @@ import LOGO from '../LOGO.svg';
 export default function SignUp () {
   return (
     <Container className='body'>
+      <Row>
+        <Col className='my-2' sm={12}>
+          <img src={LOGO} className='logo' alt='logo'/>
+        </Col>
+      </Row>
       <Row className="justify-content-md-center">
         <Col>
-          <img src={LOGO} className='logo' alt='logo'/>
-          {' '}
-
           <Form className='my-2'>
             <Form.Group controlId="login">
             <Form.Label>Email</Form.Label>

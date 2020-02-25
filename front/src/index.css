@@ -23,6 +23,12 @@ code {
   font-family: Raleway "Black";
 }
 
+.footer{
+  background-color: #DCDCDC;
+  font-family: Raleway "Black";
+  color: #D3D3D3;
+}
+
 .logo {
   height: 150;
   pointer-events: none;

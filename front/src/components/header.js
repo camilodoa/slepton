@@ -1,14 +1,13 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import Link from 'react-router-dom/Link';
 import LOGONAME from '../LOGO-NAME.svg';
 
 export default function Header ({path}) {
   return (
-    <Navbar className="header">
-      <Navbar.Brand href='/' bg='white' expand='lg' fixed='top'>
+    <Navbar className="header" bg='white' expand='lg'>
+      <Navbar.Brand href='/'>
         <img
           alt=''
           src={LOGONAME}
@@ -16,22 +15,20 @@ export default function Header ({path}) {
           className='d-inline-block align-top'
         />{' '}
       </Navbar.Brand>
-
-      <Nav className='m-2 ml-auto' >
-        <Link to='/login'>
+      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Link to='/login' className='ml-auto mx-2'>
           <Button variant="outline-dark">
             Sign In
           </Button>
         </Link>
-      </Nav>
 
-      <Nav className='m-2' >
-        <Link to='/signup'>
+        <Link to='/signup' className='mx-2'>
           <Button variant="dark" >
             Sign Up
           </Button>
         </Link>
-      </Nav>
+      </Navbar.Collapse>
 
       {
       //   path.pathname !== '/login' ?

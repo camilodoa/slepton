@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import LOGO from '../LOGO.svg';
 
 export default function Home () {
@@ -14,7 +15,6 @@ export default function Home () {
       </Row>
       <Row className="justify-content-md-center">
         <Col className='my-2'>
-          {' '}
           <h3>
             <p>In the modern day and age, everyday music listeners have access
             to millions of songs at the click of the button or tap of a screen.
@@ -39,6 +39,11 @@ export default function Home () {
             passage justifying your choice.
             </p>
           </h3>
+        </Col>
+      </Row>
+      <Row>
+        <Col className='my-2'>
+          <h3>New to SLEPTON? {' '} <Button href='/signup' variant="outline-light">Sign Up</Button></h3>
         </Col>
       </Row>
     </Container>
